@@ -10,7 +10,8 @@ print('hello', name)
 
 
 # using input
-age = float(input('\nWhat is your age? '))
+# age = float(input('\nWhat is your age? '))
+age =23
 print('Your age is', age)
 
 # using if else
@@ -223,3 +224,8 @@ print(add(1))
 # what is this f in front of a string
 
 f'hello {name}'
+
+
+fun =  lambda x: x[::]
+
+print(fun('hello_world'))

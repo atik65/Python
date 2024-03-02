@@ -1,3 +1,5 @@
+
+
 # list 
 list1 =['a','b','c','d','e']
 print('printing a list = ', list1);
@@ -66,5 +68,34 @@ cars = [
 def sortCarsKey(car):
     return car['year']
 
-cars.sort(key=sortCarsKey)
+cars.sort( reverse=True, key=sortCarsKey)
 print('cars after sort = ', cars);
+
+
+
+
+print('/n/n')
+print('Slice practice')
+
+# slice list
+s='hello_world'
+
+# print(s[::-2])
+# output: drwolh
+
+# print(s[-1::])
+# output: d
+
+print(s[-55:-15:-1])
+
+
+
+
+# x ='atik'
+
+# def reverseString(word):
+#     return word[::-1]
+
+# reverse = lambda word: word[::-1]
+
+# print(reverse(x))
