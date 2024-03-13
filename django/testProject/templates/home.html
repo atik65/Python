@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block title %}
+  Home
+{% endblock %} {% block content %}
+  <div>
+    <h1>Welcome from home page</h1>
+
+    <p>Name of the variable = {{ name }}</p>
+
+    <p>Age of the variable = {{ age }}</p>
+
+    <p>List of the variable = {{ scores }}</p>
+
+    <div>
+      <h2>List of the variable</h2>
+
+      <ul>
+        {% for score in scores %}
+          <li>{{ score }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endblock %}

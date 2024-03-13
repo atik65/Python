@@ -1,0 +1,35 @@
+make a gitignore file for python and django project
+# Python
+*.pyc
+*.pyo
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.pyzw
+
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+*.swp
+*.swo
+local_settings.py
+db.sqlite3
+media/
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Environment
+.env
+venv/
+env/
+env.bak/
+env/
