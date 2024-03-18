@@ -1,5 +1,5 @@
 """
-URL configuration for testProject project.
+URL configuration for testProject2 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -18,12 +18,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
-admin.site.site_header = "Test Admin"
-admin.site.site_title = "Test Admin Portal"
-admin.site.index_title = "Welcome to Test Admin Portal"
-
 urlpatterns = [
-    path("admin/", admin.site.urls),
     path("", include("home.urls")),
-    path("dashboard/", include("dashboard.urls")),
+    path("admin/", admin.site.urls),
+    path("auth/", include("auth.urls")),
+    path("products/", include("products.urls")),
 ]

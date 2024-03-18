@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <a href="/">Home</a>
+        <a href="/auth/logout">Logout</a>
+      </div>
+      <h1>Add Product</h1>
+
+      <form action="/products/" method="post">
+        {% csrf_token %}
+
+        <input placeholder="Product name" type="text" name="name" required />
+        <input type="submit" value="add" />
+      </form>
+    </div>
+
+    <div>
+      {% for message in messages %}
+        <p>{{ message }}</p>
+      {% endfor %}
+    </div>
+
+    <h1>all products</h1>
+
+    <table border="2px" style="width: 100%;">
+      <tr>
+        <th>name</th>
+        <th>Acttion</th>
+      </tr>
+      {% for prod in products %}
+        <tr>
+          <td>{{ prod.name }}</td>
+          <td>
+            <div style="display: flex ; justify-content: space-around;">
+              <a href="/products/{{ prod.id }}">show</a>
+              <a href="/products/update/{{ prod.id }}/">edit</a>
+              <a href="/products/{{ prod.id }}/delete">delete</a>
+            </div>
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
