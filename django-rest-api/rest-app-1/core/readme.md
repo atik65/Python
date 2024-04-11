@@ -1,6 +1,6 @@
 <!-- generate readme for my first rest api project in django -- with rest framework -->
 
-# My First REST API Project
+# REST API Project
 
 This is a README file for my first REST API project in Django with the Django REST framework.
 
@@ -11,10 +11,6 @@ This project aims to create a RESTful API using Django and the Django REST frame
 ## Installation
 
 1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/your-project.git
-   ```
 
 2. Change into the project directory:
 
@@ -60,7 +56,6 @@ Once the development server is running, you can access the API endpoints using a
 - `Product POST /product/`: Create a new product.
 - `Product PUT /product/{id}/`: Update a specific product.
 - `Product DELETE /product/{id}/`: Delete a specific product.
-
 
 - `Home GET /`: Retrieve a list of home data.
 - `Product POST /post/`: Create a new home data.
